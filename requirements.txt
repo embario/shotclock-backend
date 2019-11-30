@@ -1,0 +1,7 @@
+django==2.2
+django-rest-framework
+flake8
+django-rest-swagger
+django-reversion
+ipdb
+psycopg2

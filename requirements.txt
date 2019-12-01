@@ -3,5 +3,6 @@ django-rest-framework
 flake8
 django-rest-swagger
 django-reversion
+django-extensions
 ipdb
 psycopg2

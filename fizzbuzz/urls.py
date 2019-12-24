@@ -13,7 +13,7 @@ router.register('users', views.UserViewSet)
 router.register('music-profiles', views.MusicProfileViewSet)
 router.register('power-hours', views.PowerHourViewSet)
 
-schema_view = get_swagger_view(title='FizzBuzz API')
+schema_view = get_swagger_view(title='Fizzbuzz API')
 
 urlpatterns = [
     path('api/v1/', include(router.urls)),

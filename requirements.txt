@@ -1,8 +1,12 @@
-django==2.2
+django==2.2.8
 django-rest-framework
 flake8
+flake8-builtins
+coverage
 django-rest-swagger
 django-reversion
 django-extensions
+django-cors-headers
 ipdb
-psycopg2
+psycopg2-binary
+

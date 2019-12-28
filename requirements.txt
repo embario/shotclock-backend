@@ -5,6 +5,7 @@ flake8-builtins
 coverage
 django-rest-swagger
 django-reversion
+django-extensions
 django-cors-headers
 ipdb
 psycopg2-binary

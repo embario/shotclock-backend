@@ -26,4 +26,4 @@ jobs:
       - run:
           name: Run tests
           command: |
-            docker-compose -f docker-compose.ci.yml execb web python manage.py test --parallel
+            docker-compose -f docker-compose.ci.yml exec web python manage.py test --parallel

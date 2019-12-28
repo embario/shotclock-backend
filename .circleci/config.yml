@@ -3,14 +3,13 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.7
-    working_directory: /app
     steps:
       - checkout
       - setup_remote_docker
       - run:
           name: Bring up all services
           command: |
-            whoami
+            docker ps
             docker-compose -f docker-compose.ci.yml pull
             docker-compose -f docker-compose.ci.yml build web
             docker-compose -f docker-compose.ci.yml up -d

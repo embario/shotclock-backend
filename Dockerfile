@@ -14,4 +14,4 @@ WORKDIR /app
 
 EXPOSE 8000
 
-ENTRYPOINT ["/bin/bash", "/app/run.sh"]
+CMD ["/bin/bash", "/app/run.sh"]

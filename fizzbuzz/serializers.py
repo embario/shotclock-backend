@@ -12,7 +12,7 @@ logger = logging.Logger(__name__)
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        exclude = ('password',)
+        exclude = ('user_permissions', 'groups')
 
 
 class MusicProfileSerializer(serializers.HyperlinkedModelSerializer):

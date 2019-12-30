@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 from rest_framework import serializers
 
-from fizzbuzz import models
+from shotclock import models
 
 logger = logging.Logger(__name__)
 

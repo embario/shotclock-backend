@@ -2,7 +2,7 @@ import logging
 from django.contrib.auth.models import User
 from rest_framework import viewsets, permissions
 
-from fizzbuzz import models, serializers
+from shotclock import models, serializers
 
 logger = logging.Logger(__name__)
 

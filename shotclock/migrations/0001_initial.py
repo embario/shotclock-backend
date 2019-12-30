@@ -57,7 +57,7 @@ class Migration(migrations.Migration):
                 ('created_by', models.OneToOneField(on_delete=django.db.models.deletion.PROTECT, related_name='created_powerhoursession', to=settings.AUTH_USER_MODEL)),
                 ('modified_by', models.OneToOneField(on_delete=django.db.models.deletion.PROTECT, related_name='modified_powerhoursession', to=settings.AUTH_USER_MODEL)),
                 ('participants', models.ManyToManyField(to=settings.AUTH_USER_MODEL)),
-                ('power_hour', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='fizzbuzz.PowerHour')),
+                ('power_hour', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='shotclock.PowerHour')),
             ],
             options={
                 'abstract': False,
@@ -66,7 +66,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='powerhour',
             name='settings',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='fizzbuzz.PowerHourSettings'),
+            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='shotclock.PowerHourSettings'),
         ),
         migrations.CreateModel(
             name='MusicProfile',

@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
-from fizzbuzz.models import BaseModel
+from shotclock.models import BaseModel
 
 
 class MusicProfile(BaseModel):

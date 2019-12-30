@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
 
-from fizzbuzz.models import PowerHour, PowerHourSettings
+from shotclock.models import PowerHour, PowerHourSettings
 
 
 class PowerHourTests(TestCase):

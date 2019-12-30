@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 
-from fizzbuzz.models import BaseModel
+from shotclock.models import BaseModel
 
 POWER_HOUR_DEFAULT = 60
 

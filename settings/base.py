@@ -22,6 +22,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 # Application definition
 REST_FRAMEWORK = {
@@ -48,6 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'fizzbuzz',
     'rest_framework',
+    'rest_framework.authtoken',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'fizzbuzz.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database

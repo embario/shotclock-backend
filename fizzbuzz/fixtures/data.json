@@ -4,7 +4,7 @@
 		"pk": 1,
 		"fields": {
 			"username": "super_user",
-			"password": "testpassword",
+			"password": "pbkdf2_sha256$150000$tDlrPwAP5y0a$OCoqehRSgLSHFw8bfVBk6MxaXyvNrDzkACmv78QHArA=",
 			"email": "test@test.com",
 			"last_login": null,
 			"is_superuser": true,

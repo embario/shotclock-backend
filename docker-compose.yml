@@ -9,6 +9,11 @@ services:
     volumes:
       - ./:/app
     env_file: .env
+    logging:
+      driver: json-file
+      options:
+        max-size: 500k
+        max-file: "1"    
     
   db:
     image: circleci/postgres

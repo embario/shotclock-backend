@@ -10,12 +10,16 @@ logger = logging.Logger(__name__)
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
+    token = serializers.CharField(source='auth_token.key')
+
     class Meta:
         model = User
         exclude = ('user_permissions', 'groups')
 
 
 class MusicProfileSerializer(serializers.HyperlinkedModelSerializer):
+    user = UserSerializer(read_only=True)
+
     class Meta:
         model = models.MusicProfile
         fields = "__all__"

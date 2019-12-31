@@ -7,6 +7,6 @@ django-rest-swagger
 django-reversion
 django-extensions
 django-cors-headers
-ipdb
+social-auth-app-django
 psycopg2-binary
-
+ipdb

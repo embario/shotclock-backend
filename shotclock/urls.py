@@ -17,10 +17,10 @@ schema_view = get_swagger_view(title='shotclock API')
 
 urlpatterns = [
     path('api/v1/', include(router.urls)),
+    path('api/v1/social-login/', views.SocialAuth.as_view(), name='social_login'),
     path('admin/', admin.site.urls),
     path('docs/', schema_view),
     path('api-auth/', include('rest_framework.urls')),
-
 ]
 
 

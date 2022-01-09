@@ -1,4 +1,4 @@
-django==2.2.24
+django==2.2.25
 django-rest-framework
 flake8
 flake8-builtins
